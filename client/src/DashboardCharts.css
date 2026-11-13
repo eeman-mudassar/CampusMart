@@ -1,0 +1,368 @@
+
+.advanced-dashboard {
+  margin: 25px 0;
+}
+
+.analytics-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.analytics-eyebrow {
+  color: #579184;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin: 0 0 7px;
+}
+
+.analytics-heading h2 {
+  margin: 0 0 6px;
+  color: #34465b;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.analytics-heading > div > p:last-child {
+  color: #7d8997;
+  font-size: 12px;
+  margin: 0;
+}
+
+.analytics-period {
+  flex-shrink: 0;
+  padding: 9px 13px;
+  border: 1px solid #d6e9e2;
+  border-radius: 20px;
+  background: #e8f4ef;
+  color: #4f897d;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* Date filters */
+
+.analytics-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+  padding: 13px;
+  border: 1px solid #eee7e0;
+  border-radius: 13px;
+  background: #fff;
+}
+
+.period-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.period-buttons button {
+  padding: 9px 15px;
+  border: 1px solid #e6e9ed;
+  border-radius: 9px;
+  background: #fff;
+  color: #667587;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.period-buttons button:hover {
+  border-color: #91b9ad;
+  color: #287d6e;
+}
+
+.period-buttons button.active {
+  background: #287d6e;
+  border-color: #287d6e;
+  color: #fff;
+}
+
+.custom-date-fields {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.custom-date-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #7d8997;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.custom-date-fields input {
+  min-width: 135px;
+  padding: 8px 9px;
+  border: 1px solid #e6e9ed;
+  border-radius: 8px;
+  outline: none;
+  color: #34465b;
+  background: #fff;
+  font-family: inherit;
+  font-size: 11px;
+}
+
+.custom-date-fields input:focus {
+  border-color: #579184;
+}
+
+/* KPI cards */
+
+.analytics-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
+.analytics-stat-card {
+  min-width: 0;
+  padding: 17px;
+  border: 1px solid #eee7e0;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(78, 102, 128, 0.035);
+}
+
+.analytics-stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.analytics-stat-top > span:first-child {
+  color: #7d8997;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.analytics-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #e8f4ef;
+  color: #287d6e;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.analytics-stat-card h3 {
+  overflow-wrap: anywhere;
+  margin: 13px 0 6px;
+  color: #34465b;
+  font-size: clamp(17px, 2vw, 24px);
+  font-weight: 900;
+}
+
+.analytics-stat-card p {
+  margin: 0;
+  color: #929ba7;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.analytics-stat-card.revenue .analytics-stat-icon {
+  background: #e9f0fa;
+  color: #4f79b5;
+}
+
+.analytics-stat-card.bills .analytics-stat-icon {
+  background: #f8e9ec;
+  color: #b96779;
+}
+
+.analytics-stat-card.units .analytics-stat-icon {
+  background: #e5f2ef;
+  color: #287d6e;
+}
+
+.analytics-stat-card.profit .analytics-stat-icon {
+  background: #edf0fa;
+  color: #365f9d;
+}
+
+/* Average bill */
+
+.analytics-average {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 14px 17px;
+  border: 1px solid #d6e9e2;
+  border-radius: 12px;
+  background: #f5faf7;
+}
+
+.analytics-average > span:first-child {
+  color: #607d76;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.analytics-average strong {
+  color: #287d6e;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.average-note {
+  margin-left: auto;
+  color: #929ba7;
+  font-size: 10px;
+}
+
+/* Charts */
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.chart-card {
+  min-width: 0;
+  padding: 21px 18px 15px;
+  border: 1px solid #eee7e0;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(78, 102, 128, 0.035);
+}
+
+.chart-card-heading {
+  margin-bottom: 14px;
+}
+
+.chart-card-heading h2 {
+  margin: 0 0 6px;
+  color: #34465b;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.chart-card-heading p {
+  margin: 0;
+  color: #929ba7;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.chart-empty {
+  min-height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  color: #929ba7;
+  background: #fffcf8;
+  border-radius: 11px;
+  font-size: 12px;
+}
+
+.chart-card .recharts-responsive-container {
+  min-width: 0;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1100px) {
+  .analytics-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .analytics-heading {
+    align-items: flex-start;
+  }
+
+  .analytics-heading h2 {
+    font-size: 20px;
+  }
+
+  .analytics-period {
+    font-size: 10px;
+    padding: 7px 9px;
+  }
+
+  .analytics-filters {
+    align-items: flex-start;
+  }
+
+  .period-buttons {
+    width: 100%;
+  }
+
+  .period-buttons button {
+    flex: 1;
+    padding: 9px 7px;
+  }
+
+  .custom-date-fields {
+    width: 100%;
+  }
+
+  .custom-date-fields label {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .custom-date-fields input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .analytics-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .analytics-stat-card {
+    padding: 12px;
+  }
+
+  .analytics-stat-card h3 {
+    font-size: 17px;
+  }
+
+  .analytics-average {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .average-note {
+    margin-left: 0;
+  }
+
+  .chart-card {
+    padding: 16px 10px 12px;
+  }
+}
